@@ -1,6 +1,6 @@
 [![Build Status](https://travis-ci.org/agerlic/hipchat-notifications-to-slack.svg?branch=master)](https://travis-ci.org/agerlic/hipchat-notifications-to-slack)
 
-## Forward Hipchat notifications to Slack
+## Forward HipChat notifications to Slack
 
 This tool reformat and forward notifications from HipChat to Slack
 
