@@ -1,15 +1,15 @@
-== Send HipchatNotifications to Slack ==
+# Send HipchatNotifications to Slack
 
 This tool reformat and forward notifications from HipChat to Slack
 
-== Use Cases ==
+# Use Cases
 
 * Test Slack without rewriting all your notifications
 * Smooth transition from HipChat to Slack
 * Handle services only compatible with Hipchat notifications eg (http://intercom.io)
 * Don't use polling to transfers messages from Hipchat to Slack
 
-== Deploy on Heroku ==
+# Deploy on Heroku
 * Create your Slack Inbound Webhook : https://my.slack.com/services/new/incoming-webhook
   * Login to your Slack Account
   * Go to Integrations Tab
