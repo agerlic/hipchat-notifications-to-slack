@@ -8,7 +8,7 @@ This tool reformat and forward notifications from HipChat to Slack
 
 * Test Slack without rewriting all your notifications
 * Smooth transition from HipChat to Slack
-* Handle services only compatible with Hipchat notifications eg (http://intercom.io)
+* Handle services only compatible with Hipchat notifications
 * Don't use polling to transfer messages from Hipchat to Slack
 
 ## Deploy on Heroku
