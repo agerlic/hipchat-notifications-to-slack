@@ -21,7 +21,7 @@ case "$1" in
 
   --create)
     : ${FORWARD_APP_URL:?"Need to set FORWARD_APP_URL non-empty"}
-    curl -H "Content-Type: application/json" -d "{\"url\":\"$FORWARD_APP_URL\",\"event\": \"room_notification\", \"name\": \"$HIPCHAT_ROOM\" }" \
+    curl -H "Content-Type: application/json" -d "{\"url\":\"$FORWARD_APP_URL\",\"event\": \"room_message\", \"name\": \"$HIPCHAT_ROOM\" }" \
       https://api.hipchat.com/v2/room/$HIPCHAT_ROOM/webhook?auth_token=$HIPCHAT_ADMIN_TOKEN
   ;;
 

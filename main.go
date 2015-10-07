@@ -23,8 +23,12 @@ type HipChatEventMessage struct {
 	Color         string
 	Id            string
 	MessageFormat string
-	From          string
+	From          HipChatEventMessageFrom
 	Message       string
+}
+
+type HipChatEventMessageFrom struct {
+	Name		string
 }
 
 type HipChatRoom struct {
@@ -53,7 +57,7 @@ func sendToSlack(webhookUrl string, channel string, sourceMessage HipChatEventMe
 
 	message := reformat(sourceMessage.Message)
 
-	slackMessage := SlackMessage{Channel: channel, Username: sourceMessage.From, Text: message}
+	slackMessage := SlackMessage{Channel: channel, Username: sourceMessage.From.Name, Text: message}
 
 	payload, err := json.Marshal(slackMessage)
 	if err != nil {
